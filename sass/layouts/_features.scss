@@ -1,6 +1,10 @@
 .features {
   grid-row: 2 / 3;
   grid-column: col-start 1 / col-end 8;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-row-gap: 3rem;
+  grid-column-gap: 10rem;
 
-  background-color: $color-grey-light-2;
+  margin: 5rem 0;
 }

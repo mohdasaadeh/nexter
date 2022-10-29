@@ -1,0 +1,11 @@
+%heading {
+  font-family: $font-primary;
+}
+
+.heading-4 {
+  font-size: 1.7rem;
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
+}
