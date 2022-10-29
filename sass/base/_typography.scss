@@ -1,8 +1,7 @@
-%heading {
-  font-family: $font-primary;
-}
-
 .heading-4 {
+  @extend %heading;
+
+  font-weight: 400;
   font-size: 1.7rem;
 
   &--dark {
