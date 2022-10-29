@@ -1,4 +1,4 @@
-.heading-4 {
+.heading-4, .heading-3, .heading-2 {
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -13,6 +13,29 @@
 html {
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
+}
+
+.m-t-sm {
+  margin-top: 2rem;
+}
+
+.heading-2 {
+  font-weight: 500;
+  font-size: 2.8rem;
+  font-style: italic;
+}
+.heading-2--dark {
+  color: #54483a;
+}
+
+.heading-3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.heading-3--primary {
+  color: #c69963;
 }
 
 .heading-4 {
@@ -39,6 +62,17 @@ html {
 }
 .feature__body {
   font-size: 1.2rem;
+}
+
+.btn-primary {
+  padding: 1.8rem 3rem;
+  border: none;
+  background-color: #c69963;
+  color: #f9f7f6;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #b28451;
 }
 
 .sidebar {
@@ -78,12 +112,35 @@ html {
 .story-pictures {
   grid-row: 3/4;
   grid-column: margin-left-start/col-end 4;
-  background-color: #c69963;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  background-image: linear-gradient(to right, rgba(178, 132, 81, 0.5), rgba(178, 132, 81, 0.5)), url("../img/back.jpg");
+  background-size: cover;
+}
+.story-pictures__img--1 {
+  grid-row: 2/6;
+  grid-column: 2/6;
+  width: 100%;
+}
+.story-pictures__img--2 {
+  grid-row: 4/6;
+  grid-column: 4/-1;
+  width: 115%;
 }
 
 .story-content {
   grid-row: 3/4;
   grid-column: col-start 5/margin-right-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 5rem 10vw;
+}
+.story-content__body {
+  font-size: 1.3rem;
+  color: #54483a;
 }
 
 .gallery {

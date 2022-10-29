@@ -1,0 +1,12 @@
+.btn-primary {
+  padding: 1.8rem 3rem;
+
+  border: none;
+  background-color: $color-primary;
+  color: $color-grey-light-1;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
