@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+}
+
+.sidebar {
+  grid-row: 1/-1;
+  grid-column: sidebar-start/sidebar-end;
+  background-color: #c69963;
+}
+
+.header {
+  grid-row: 1/2;
+  grid-column: margin-left-start/col-end 6;
+  background-color: #54483a;
+}
+
+.realtors {
+  grid-row: 1/2;
+  grid-column: col-start 7/margin-right-end;
+  background-color: #101d2c;
+}
+
+.features {
+  grid-row: 2/3;
+  grid-column: col-start 1/col-end 8;
+  background-color: #aaa;
+}
+
+.homes {
+  grid-row: 4/5;
+  grid-column: col-start 1/col-end 8;
+  background-color: #101d2c;
+}
+
+.story-pictures {
+  grid-row: 3/4;
+  grid-column: margin-left-start/col-end 4;
+  background-color: #c69963;
+}
+
+.story-content {
+  grid-row: 3/4;
+  grid-column: col-start 5/margin-right-end;
+}
+
+.gallery {
+  grid-row: 5/6;
+  grid-column: margin-left-start/margin-right-end;
+  background-color: #54483a;
+}
+
+.footer {
+  grid-row: 6/7;
+  grid-column: margin-left-start/margin-right-end;
+  background-color: #101d2c;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [sidebar-start] 6rem [sidebar-end margin-left-start] minmax(6rem, 1fr) [margin-left-end] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [margin-right-start] minmax(6rem, 1fr) [margin-right-end];
+}
+
+/*# sourceMappingURL=main.css.map */
